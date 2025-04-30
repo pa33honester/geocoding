@@ -65,12 +65,24 @@ def get_lat_lng(driver):
         lat, lon = get_lat_lng_from_page(driver)
     return lat, lon
 def extract_place_info(title, driver):
+
     try:
         query = f'div.m6QErb[aria-label="{title}"]'
         name = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, query))).get_attribute('aria-label')
     except :
         print(f"No name")
         return 'retry'
+    
+    service = "AAA"
+    try:
+        service = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.tAiQdd button.DkEaL"))).text
+    except :
+        print("Error in category")
+    
+    print(f"-=-=-=-{service}-=-=-=")
+    if service.lower().find("car wash") == -1 :
+        return 'no_car_wash'
+
     # Attempt to extract address
     try:
         address = WebDriverWait(driver, 3).until(EC.presence_of_element_located((By.CSS_SELECTOR, "button[aria-label*='Address']"))).get_attribute('aria-label')
@@ -136,7 +148,9 @@ def scrape(driver, wait, actionChains, city_name):
         time.sleep(1)  # Give time for the page to load
     except :
         print("No cookie banner found or already accepted")
-    
+
+    time.sleep(3)
+
     focus_element = driver.find_element(By.ID, 'zero-input')
     actionChains.move_to_element(focus_element).click().perform()
     for atempt in range(MAX_ATTEMPT):
@@ -149,7 +163,7 @@ def scrape(driver, wait, actionChains, city_name):
 
     print('scrolling success')
     # Create a CSV file to store the data
-    with open(f"car_washes_{city_name}.csv", mode="w", newline="", encoding="utf-8") as file:
+    with open(f"./list/car_washes_{city_name}.csv", mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(["Name", "Address", "Website", "Plus-code", "lat", "lon"])
 
@@ -158,6 +172,12 @@ def scrape(driver, wait, actionChains, city_name):
             print(f"==================One element exist in {city_name} ===================================")
             return
         for result in results:
+            for attempt in range(MAX_ATTEMPT):
+                time.sleep(0.1)
+                if result.location['y'] < 500:
+                    break
+                actionChains.send_keys(Keys.ARROW_DOWN).perform()
+
             title = result.get_attribute("aria-label")
             if not title:
                 print("Skipping empty result (no title).")
@@ -176,7 +196,11 @@ def scrape(driver, wait, actionChains, city_name):
                 wait_for_map_to_idle(driver)
 
                 info = extract_place_info(title, driver)
-                if info != 'retry':
+                if info == 'no_car_wash':
+                    break
+                elif info == 'retry':
+                    continue
+                else :
                     name, address, website, plus_code = info
                     if address != "":
                         lat, lon = get_lat_lng(driver)  # Use the new bulletproof function!
@@ -184,35 +208,31 @@ def scrape(driver, wait, actionChains, city_name):
                         writer.writerow(row)
                     print(f">>> {name} | {address} | {plus_code}  | ({lat, lon})")
                     break
-            for attempt in range(MAX_ATTEMPT):
-                time.sleep(0.1)
-                if result.location['y'] < 400:
-                    break
-                actionChains.send_keys(Keys.ARROW_DOWN).perform()
-
-    print(f"Scraping {city_name} success")
+           
+    print(f"*************** Success scraping {city_name} ***********************")
 
 city_list = [
-    "Melbourne", 
-    "Darwin", 
-    "Brisbane", 
-    "Gold Coast", 
-    "Hobart", 
-    "Perth", 
-    "Adelaide",
-    # Sydney suburbs
-    # [
+    # "Melbourne", 
+    # "Darwin", 
+    # "Brisbane", 
+    # "Gold Coast", 
+    # "Hobart", 
+    # "Perth", 
+    # "Adelaide",
+    # # Sydney suburbs
+    # # [
     #     "Sydney", "Ultimo", "Pyrmont", "Surry Hills", "Newtown", "Redfern", "Glebe", "Chippendale",
     #     "Leichhardt", "Annandale", "Marrickville", "Ashfield", "Petersham", "Dulwich Hill",
     #     "Bondi", "Bondi Junction", "Coogee","Randwick", "Clovelly", "Maroubra",
     #     "North Sydney", "Crows Nest", "Neutral Bay", "Kirribilli", "Lane Cove", "Mosman",
     #     "Chatswood", "Roseville", "Gordon","Pymble", "Wahroonga", "Hornsby",
     #     "Castle Hill", "Baulkham Hills", "Kellyville", "Rouse Hill", "Bella Vista",
-    #     "Parramatta", "Auburn", "Granville", "Lidcombe", "Westmead", "Blacktown", "Seven Hills",
-    #     "Penrith", "St Marys", "Mount Druitt", "Rooty Hill",
-    #     "Bankstown", "Liverpool", "Cabramatta", "Fairfield", "Casula", "Green Valley",
-    #     "Kogarah", "Hurstville", "Rockdale", "Bexley", "Blakehurst",
-    #     "Miranda", "Cronulla", "Caringbah", "Engadine", "Sutherland", "Menai"
+    #     "Parramatta", "Auburn", "Granville", "Lidcombe", "Westmead", 
+        "Blacktown", "Seven Hills",
+        "Penrith", "St Marys", "Mount Druitt", "Rooty Hill",
+        "Bankstown", "Liverpool", "Cabramatta", "Fairfield", "Casula", "Green Valley",
+        "Kogarah", "Hurstville", "Rockdale", "Bexley", "Blakehurst",
+        "Miranda", "Cronulla", "Caringbah", "Engadine", "Sutherland", "Menai"
     # ]
 ]
 

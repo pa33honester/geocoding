@@ -10,7 +10,7 @@ df_list = [pd.read_csv(file) for file in csv_files]
 combined_df = pd.concat(df_list, ignore_index=True)
 
 # 3. Drop duplicate rows
-combined_df = combined_df.drop_duplicates()
+combined_df = combined_df.drop_duplicates(subset=['Name','Address'])
 
 # 4. Create output directory if not exists
 output_dir = './output'
