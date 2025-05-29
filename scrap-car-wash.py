@@ -6,7 +6,6 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import csv
 import re
-from geopy.geocoders import Nominatim
 
 MAX_ATTEMPT = 100
 
@@ -65,30 +64,24 @@ def get_lat_lng(driver):
         lat, lon = get_lat_lng_from_page(driver)
     return lat, lon
 def extract_place_info(title, driver):
-
     try:
         query = f'div.m6QErb[aria-label="{title}"]'
         name = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, query))).get_attribute('aria-label')
     except :
         print(f"No name")
         return 'retry'
-    
-    service = "AAA"
     try:
         service = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.tAiQdd button.DkEaL"))).text
     except :
+        service = ""
         print("Error in category")
-    
-    print(f"-=-=-=-{service}-=-=-=")
-    if service.lower().find("car wash") == -1 :
-        return 'no_car_wash'
 
     # Attempt to extract address
     try:
         address = WebDriverWait(driver, 3).until(EC.presence_of_element_located((By.CSS_SELECTOR, "button[aria-label*='Address']"))).get_attribute('aria-label')
     except :
         print("No address")
-        return name , "", "", ""
+        return name , service, "", "", ""
    # Extract website
     try :
         website = WebDriverWait(driver, 3).until(EC.presence_of_element_located((By.XPATH, "//a[contains(@href, 'http') and @data-item-id='authority']"))).get_attribute('href')
@@ -101,7 +94,7 @@ def extract_place_info(title, driver):
     except :
         plus_code = ""
         print(f"No plus code")
-    return name, address, website, plus_code
+    return name, service, address, website, plus_code
 def wait_for_map_to_idle(driver, timeout=10):
     """Wait until Google Maps finishes loading new place information."""
     script = """
@@ -165,11 +158,11 @@ def scrape(driver, wait, actionChains, city_name):
     # Create a CSV file to store the data
     with open(f"./list/car_washes_{city_name}.csv", mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-        writer.writerow(["Name", "Address", "Website", "Plus-code", "lat", "lon"])
+        writer.writerow(["Name", "Address", "Website", "Plus-code", "lat", "lon", "service"])
 
         results = wait.until(EC.presence_of_all_elements_located((By.XPATH, "//a[@class='hfpxzc']")))
         if len(results) < 2:
-            print(f"==================One element exist in {city_name} ===================================")
+            print(f"===========One element exist in {city_name} ====================")
             return
         for result in results:
             for attempt in range(MAX_ATTEMPT):
@@ -196,38 +189,38 @@ def scrape(driver, wait, actionChains, city_name):
                 wait_for_map_to_idle(driver)
 
                 info = extract_place_info(title, driver)
-                if info == 'no_car_wash':
-                    break
-                elif info == 'retry':
+
+                if info == 'retry':
                     continue
                 else :
-                    name, address, website, plus_code = info
-                    if address != "":
+                    name, service, address, website, plus_code = info
+                    
+                    if address != "" and service.lower().find("car wash") != -1:
                         lat, lon = get_lat_lng(driver)  # Use the new bulletproof function!
-                        row = [name, address[9:], website, plus_code[11:], lat, lon]
+                        row = [name, address[9:], website, plus_code[11:], lat, lon, service]
                         writer.writerow(row)
-                    print(f">>> {name} | {address} | {plus_code}  | ({lat, lon})")
+                    print(f">>> {service} | {name} | {address} | {plus_code}  | ({lat, lon})")
                     break
            
     print(f"*************** Success scraping {city_name} ***********************")
 
 city_list = [
-    # "Melbourne", 
-    # "Darwin", 
-    # "Brisbane", 
-    # "Gold Coast", 
-    # "Hobart", 
-    # "Perth", 
-    # "Adelaide",
-    # # Sydney suburbs
-    # # [
-    #     "Sydney", "Ultimo", "Pyrmont", "Surry Hills", "Newtown", "Redfern", "Glebe", "Chippendale",
-    #     "Leichhardt", "Annandale", "Marrickville", "Ashfield", "Petersham", "Dulwich Hill",
-    #     "Bondi", "Bondi Junction", "Coogee","Randwick", "Clovelly", "Maroubra",
-    #     "North Sydney", "Crows Nest", "Neutral Bay", "Kirribilli", "Lane Cove", "Mosman",
-    #     "Chatswood", "Roseville", "Gordon","Pymble", "Wahroonga", "Hornsby",
-    #     "Castle Hill", "Baulkham Hills", "Kellyville", "Rouse Hill", "Bella Vista",
-    #     "Parramatta", "Auburn", "Granville", "Lidcombe", "Westmead", 
+    "Melbourne", 
+    "Darwin", 
+    "Brisbane", 
+    "Gold Coast", 
+    "Hobart", 
+    "Perth", 
+    "Adelaide",
+    # Sydney suburbs
+    # [
+        "Sydney", "Ultimo", "Pyrmont", "Surry Hills", "Newtown", "Redfern", "Glebe", "Chippendale",
+        "Leichhardt", "Annandale", "Marrickville", "Ashfield", "Petersham", "Dulwich Hill",
+        "Bondi", "Bondi Junction", "Coogee","Randwick", "Clovelly", "Maroubra",
+        "North Sydney", "Crows Nest", "Neutral Bay", "Kirribilli", "Lane Cove", "Mosman",
+        "Chatswood", "Roseville", "Gordon","Pymble", "Wahroonga", "Hornsby",
+        "Castle Hill", "Baulkham Hills", "Kellyville", "Rouse Hill", "Bella Vista",
+        "Parramatta", "Auburn", "Granville", "Lidcombe", "Westmead", 
         "Blacktown", "Seven Hills",
         "Penrith", "St Marys", "Mount Druitt", "Rooty Hill",
         "Bankstown", "Liverpool", "Cabramatta", "Fairfield", "Casula", "Green Valley",

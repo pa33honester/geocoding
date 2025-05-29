@@ -1,10 +1,13 @@
-Name,Address,Website,Plus-code,lat,lon
-Scrubbers Car Wash,"270 Argyle St, North Hobart TAS 7000, Australia ",http://scrubberscarwash.com.au/,"48G9+9Q North Hobart, Tasmania, Australia",-42.8740711,147.3194048
-Coles Express Wash,"North Hobart TAS 7000, Australia ",https://www.reddyexpress.com.au/services/car-wash,,-42.876325,147.3190336
-Karwosh,"117 Central Ave, Derwent Park TAS 7009, Australia ",http://www.karwosh.com.au/,"5862+XW Derwent Park, Tasmania, Australia",-42.8376216,147.3023252
-Magic Hand Carwash - Eastlands,"26 Bligh St, Rosny Park TAS 7018, Australia ",https://www.magichcw.com.au/,"49M9+F9 Rosny Park, Tasmania, Australia",-42.8662561,147.3684022
-AJ Automotive Detailing Services,"Brisbane St, Hobart TAS 7000, Australia ",https://www.ajads.com.au/,"489C+PP Hobart, Tasmania, Australia",-42.88071,147.3218206
-T & T service Australia,"85 Macquarie St, Hobart TAS 7000, Australia ",,"489J+9G Hobart, Tasmania, Australia",-42.8815251,147.3312538
-Spit n Polish Car Detailing,"14 Lefroy St, North Hobart TAS 7000, Australia ",,"48G8+QR North Hobart, Tasmania, Australia",-42.8730943,147.3170357
-Magic Hand Carwash - Northgate,"enter via, 391 Main Road, King George V Ave, Glenorchy TAS 7010, Australia ",https://www.magichcw.com.au/,"579F+6X Glenorchy, Tasmania, Australia",-42.8319657,147.2749439
-Shell,"257 Elizabeth St, North Hobart TAS 7000, Australia ",https://find.shell.com/au/fuel/10111275-shell-reddy-express-hobart/en_AU,"48F9+9G North Hobart, Tasmania, Australia",-42.876566,147.3188703
+Name,Address,Website,Plus-code,lat,lon,service
+Scrubbers Car Wash,"270 Argyle St, North Hobart TAS 7000, Australia ",http://scrubberscarwash.com.au/,"48G9+9Q North Hobart, Tasmania, Australia",-42.8740711,147.3194048,Car wash
+Karwosh,"117 Central Ave, Derwent Park TAS 7009, Australia ",http://www.karwosh.com.au/,"5862+XW Derwent Park, Tasmania, Australia",-42.8376216,147.3023252,Car wash
+Magic Hand Carwash - Eastlands,"26 Bligh St, Rosny Park TAS 7018, Australia ",https://www.magichcw.com.au/,"49M9+F9 Rosny Park, Tasmania, Australia",-42.8662561,147.3684022,Car wash
+Coles Express Wash,"North Hobart TAS 7000, Australia ",https://www.reddyexpress.com.au/services/car-wash,"48F9+FJ North Hobart, Tasmania, Australia",-42.876325,147.3190336,Car wash
+Shoreline Car Wash,"Wicks Pl, Howrah TAS 7018, Australia ",http://www.shorelinehotel.com.au/,"4CC5+63 Howrah, Tasmania, Australia",-42.8794967,147.4076363,Self service car wash
+Magic Hand Carwash - Northgate,"enter via, 391 Main Road, King George V Ave, Glenorchy TAS 7010, Australia ",https://www.magichcw.com.au/,"579F+6X Glenorchy, Tasmania, Australia",-42.8319657,147.2749439,Car wash
+T & T service Australia,"85 Macquarie St, Hobart TAS 7000, Australia ",,"489J+9G Hobart, Tasmania, Australia",-42.8815251,147.3312538,Car wash
+AJ Automotive Detailing Services,"Brisbane St, Hobart TAS 7000, Australia ",https://www.ajads.com.au/,"489C+PP Hobart, Tasmania, Australia",-42.88071,147.3218206,Car wash
+Bubbles Jetwash,"15 Westside Cir, Kingston TAS 7050, Australia ",,"28F2+9W Kingston, Tasmania, Australia",-42.9766039,147.3023292,Car wash
+Sparkles Car Wash,"105A Grove Rd, Glenorchy TAS 7010, Australia ",,"57C9+JV Glenorchy, Tasmania, Australia",-42.8284222,147.269689,Self service car wash
+Shell,"257 Elizabeth St, North Hobart TAS 7000, Australia ",https://find.shell.com/au/fuel/10111275-shell-reddy-express-hobart/en_AU,"48F9+9G North Hobart, Tasmania, Australia",-42.876566,147.3188703,Car wash
+Spit n Polish Car Detailing,"14 Lefroy St, North Hobart TAS 7000, Australia ",,"48G8+QR North Hobart, Tasmania, Australia",-42.8730943,147.3170357,Car wash

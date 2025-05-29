@@ -1,7 +1,10 @@
-Name,Address,Website,Plus-code,lat,lon
-WOW Wash Mobile Car Wash & Detailing,"15 Blue St, North Sydney NSW 2060, Australia ",http://wowwashmobilecardetailing.com.au/,"5654+FX North Sydney, New South Wales, Australia",-33.8412663,151.207498
-Concierge Car Wash Crows Nest,"448 Pacific Hwy, Crows Nest NSW 2065, Australia ",https://conciergecarwash.com.au/,"55GX+24 Crows Nest, New South Wales, Australia",-33.8249579,151.1977692
-Platinum car wash and detailing services (greenwood plaza),"90 Pacific Hwy, North Sydney NSW 2060, Australia ",,"5664+7V North Sydney, New South Wales, Australia",-33.8393696,151.2071474
-getneat Mobile Car Wash North Shore,"2 Spruson St, Neutral Bay NSW 2089, Australia ",https://getneat.com.au/,"5668+97 Neutral Bay, New South Wales, Australia",-33.8390645,151.2157286
-North Shore Car Care,"Mosman St, Mosman NSW 2088, Australia ",,"566M+C2 Mosman, New South Wales, Australia",-33.8388779,151.2326141
-Prior Avenue Car Wash,"Prior Ave, Cremorne Point NSW 2090, Australia ",,"566G+Q3 Cremorne Point, New South Wales, Australia",-33.8380197,151.2252299
+Name,Address,Website,Plus-code,lat,lon,service
+WOW Wash Mobile Car Wash & Detailing,"15 Blue St, North Sydney NSW 2060, Australia ",http://wowwashmobilecardetailing.com.au/,"5654+FX North Sydney, New South Wales, Australia",-33.8412663,151.207498,Car wash
+Turramurra Car Wash,"1333 Pacific Hwy, Turramurra NSW 2074, Australia ",,"748G+RR Turramurra, New South Wales, Australia",-33.73298,151.127077,Car wash
+Platinum car wash and detailing services (greenwood plaza),"90 Pacific Hwy, North Sydney NSW 2060, Australia ",,"5664+7V North Sydney, New South Wales, Australia",-33.8393696,151.2071474,Car wash
+Sparkling Car Care,"77/81 Reserve Rd, Artarmon NSW 2064, Australia ",https://www.sparklingcarcare.com.au/,"55MP+JR Artarmon, New South Wales, Australia",-33.8158916,151.1870256,Car wash
+Gold Car Wash & Cafe,"44 O'Riordan St, Alexandria NSW 2015, Australia ",http://www.goldcarwashcafe.com.au/,"35QX+83 Alexandria, New South Wales, Australia",-33.9117478,151.1977002,Car wash
+Impulse Hand Car Wash And Detailing Centre,"807 Pacific Hwy, Gordon NSW 2072, Australia ",https://impulsehandcarwash.com.au/,"64XX+4W Gordon, New South Wales, Australia",-33.7521978,151.1497867,Car wash
+Ecospray Car Wash Cafe,"214 Warringah Rd, Beacon Hill NSW 2100, Australia ",https://ecospraycarwash.com.au/,"67W3+XX Beacon Hill, New South Wales, Australia",-33.7525722,151.2549098,Car wash
+Crystal Car Wash Café,"95 Ramsay St, Haberfield NSW 2045, Australia ",https://crystalcarwash.com/locations/haberfield-nsw/,"449R+84 Haberfield, New South Wales, Australia",-33.8816557,151.1402838,Car wash
+Star Car Wash - Gordon Centre,"802-808, Gordon NSW 2072, Australia ",https://www.starcarwash.com.au/centres/gordon/,"65W2+2Q Gordon, New South Wales, Australia",-33.7549288,151.1519852,Car wash

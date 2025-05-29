@@ -1,10 +1,11 @@
-Name,Address,Website,Plus-code,lat,lon
-Shire Shine Car Wash & Café,"66/68 Captain Cook Dr, Caringbah NSW 2229, Australia ",,"X48F+VH Caringbah, New South Wales, Australia",-34.0328077,151.12389
-Envirowash,"36a Cawarra Rd, Caringbah NSW 2229, Australia ",http://envirowash.net.au/,"X49G+VC Caringbah, New South Wales, Australia",-34.0302526,151.1260485
-Aqua Car Wash Miranda,"109 Miranda Rd S, Miranda NSW 2228, Australia ",https://aquacarwashcafe.com.au/,"X455+M8 Miranda, New South Wales, Australia",-34.0408694,151.1082583
-Star Car Wash - Taren Point,"144 Taren Point Rd, Taren Point NSW 2229, Australia ",https://www.starcarwash.com.au/centres/taren-point/?utm_source=google&utm_medium=organic&utm_campaign=gmb-listing,"X4GC+PJ Taren Point, New South Wales, Australia",-34.0231827,151.1216144
-Snap Car Wash Woolooware (Bay Central - Level P2 Car Park),"Car Park, Level P2/453a Captain Cook Dr, Woolooware NSW 2230, Australia ",https://www.snapcarwash.com.au/,"X46V+J5 Woolooware, New South Wales, Australia",-34.0384451,151.1429673
-Sunshine carwash,"Miranda NSW 2228, Australia ",,"X482+PQ Miranda, New South Wales, Australia",-34.0331901,151.101983
-CRONULLA HAND CARWASH,"100 Woolooware Rd, Woolooware NSW 2230, Australia ",,"W4WR+W8 Woolooware, New South Wales, Australia",-34.052747,151.1408431
-Star Car Wash - Westfield Miranda 2 (Kiora Rd),"Enter via, Westfield Miranda 600 Kingsway, Kiora Rd, Miranda NSW 2228, Australia ",https://www.starcarwash.com.au/centres/miranda-kiora/?utm_source=google&utm_medium=organic&utm_campaign=gmb-listing,"X472+HH Miranda, New South Wales, Australia",-34.0360313,151.1014093
-Soft Wash,"200 Kingsway, Woolooware NSW 2230, Australia ",,"X43M+G9 Woolooware, New South Wales, Australia",-34.0462261,151.1334366
+Name,Address,Website,Plus-code,lat,lon,service
+Shire Shine Car Wash & Café,"66/68 Captain Cook Dr, Caringbah NSW 2229, Australia ",,"X48F+VH Caringbah, New South Wales, Australia",-34.0328077,151.12389,Car wash
+Envirowash,"36a Cawarra Rd, Caringbah NSW 2229, Australia ",http://envirowash.net.au/,"X49G+VC Caringbah, New South Wales, Australia",-34.0302526,151.1260485,Self service car wash
+Star Car Wash - Taren Point,"144 Taren Point Rd, Taren Point NSW 2229, Australia ",https://www.starcarwash.com.au/centres/taren-point/?utm_source=google&utm_medium=organic&utm_campaign=gmb-listing,"X4GC+PJ Taren Point, New South Wales, Australia",-34.0231827,151.1216144,Car wash
+Aqua Car Wash Miranda,"109 Miranda Rd S, Miranda NSW 2228, Australia ",https://aquacarwashcafe.com.au/,"X455+M8 Miranda, New South Wales, Australia",-34.0408694,151.1082583,Car wash
+Snap Car Wash Woolooware (Bay Central - Level P2 Car Park),"Car Park, Level P2/453a Captain Cook Dr, Woolooware NSW 2230, Australia ",https://www.snapcarwash.com.au/,"X46V+J5 Woolooware, New South Wales, Australia",-34.0384451,151.1429673,Car wash
+Star Car Wash - Westfield Miranda 2 (Kiora Rd),"Enter via, Westfield Miranda 600 Kingsway, Kiora Rd, Miranda NSW 2228, Australia ",https://www.starcarwash.com.au/centres/miranda-kiora/?utm_source=google&utm_medium=organic&utm_campaign=gmb-listing,"X472+HH Miranda, New South Wales, Australia",-34.0360313,151.1014093,Car wash
+CRONULLA HAND CARWASH,"100 Woolooware Rd, Woolooware NSW 2230, Australia ",,"W4WR+W8 Woolooware, New South Wales, Australia",-34.052747,151.1408431,Car wash
+Soft Wash,"200 Kingsway, Woolooware NSW 2230, Australia ",,"X43M+G9 Woolooware, New South Wales, Australia",-34.0462261,151.1334366,Car wash
+Drive4Detailing,"171 Parraweena Rd, Miranda NSW 2228, Australia ",,"X4F7+6F Miranda, New South Wales, Australia",-34.0268915,151.1136964,Car wash
+Star Car Wash - Westfield Miranda Jackson Ave,"Blue Car Parkk 600 THE KINGSWAY ENTER VIA, Westfield Miranda, Level G1 Jackson Ave, Miranda NSW 2228, Australia ",https://www.starcarwash.com.au/centres/miranda-jackson/?utm_source=google&utm_medium=organic&utm_campaign=gmb-listing,"X473+RG Miranda, New South Wales, Australia",-34.0354118,151.1038489,Car wash

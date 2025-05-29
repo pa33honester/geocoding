@@ -1,3 +1,6 @@
-Name,Address,Website,Plus-code,lat,lon
-CAR CARE - Mobile Car Detailing,"13/23-29 Gray St, Sutherland NSW 2232, Australia ",https://carcare.net.au/,"X384+HR Sutherland, New South Wales, Australia",-34.0336142,151.0570062
-Mobile Shire Detailing,"Kirrawee NSW 2232, Australia ",,"X38C+W5 Kirrawee, New South Wales, Australia",-34.0326553,151.0704172
+Name,Address,Website,Plus-code,lat,lon,service
+CAR CARE - Mobile Car Detailing,"13/23-29 Gray St, Sutherland NSW 2232, Australia ",https://carcare.net.au/,"X384+HR Sutherland, New South Wales, Australia",-34.0336142,151.0570062,Car wash
+Aqua Car Wash Miranda,"109 Miranda Rd S, Miranda NSW 2228, Australia ",https://aquacarwashcafe.com.au/,"X455+M8 Miranda, New South Wales, Australia",-34.0408694,151.1082583,Car wash
+Star Car Wash - Westfield Miranda 2 (Kiora Rd),"Enter via, Westfield Miranda 600 Kingsway, Kiora Rd, Miranda NSW 2228, Australia ",https://www.starcarwash.com.au/centres/miranda-kiora/?utm_source=google&utm_medium=organic&utm_campaign=gmb-listing,"X472+HH Miranda, New South Wales, Australia",-34.0360313,151.1014093,Car wash
+Star Car Wash - Taren Point,"144 Taren Point Rd, Taren Point NSW 2229, Australia ",https://www.starcarwash.com.au/centres/taren-point/?utm_source=google&utm_medium=organic&utm_campaign=gmb-listing,"X4GC+PJ Taren Point, New South Wales, Australia",-34.0231827,151.1216144,Car wash
+Mobile Shire Detailing,"Kirrawee NSW 2232, Australia ",,"X38C+W5 Kirrawee, New South Wales, Australia",-34.0326553,151.0704172,Car wash

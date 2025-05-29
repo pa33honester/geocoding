@@ -1,12 +1,9 @@
-Name,Address,Website,Plus-code,lat,lon
-Metro Self Serve Carwash,"20 Smidmore St, Marrickville NSW 2204, Australia ",http://www.marrickvillemetro.com.au/,"35RC+QV Marrickville, New South Wales, Australia",-33.908086,151.1721824
-Gold Car Wash & Cafe,"44 O'Riordan St, Alexandria NSW 2015, Australia ",http://www.goldcarwashcafe.com.au/,"35QX+83 Alexandria, New South Wales, Australia",-33.9117478,151.1977002
-Car is here,"95 Lennox St, Newtown NSW 2042, Australia ",,"453G+FM Newtown, New South Wales, Australia",-33.8962907,151.1767181
-St. Peter’s express car wash,"379 Princes Hwy, St Peters NSW 2044, Australia ",,"35MC+3H St Peters, New South Wales, Australia",-33.9173061,151.1714676
-Star Car Wash - Headquarter Office,"Unit 43/34 – 36 Ralph St, Alexandria NSW 2015, Australia ",https://www.starcarwash.com.au/,"35JW+GV Alexandria, New South Wales, Australia",-33.9186866,151.1972141
-Star Car Wash - Alexandria Homemaker Centre,"Alexandria Homemaker Centre, Under Spotlight Sign, 49-59 O'Riordan St, Alexandria NSW 2015, Australia ",https://www.starcarwash.com.au/centres/alexandria/,"35PV+GM Alexandria, New South Wales, Australia",-33.9137229,151.1942367
-Step aside hand car wash,"New Rd, Newtown SY16 1BD, United Kingdom ",https://newtownhandcarwash.com/#details,"GM7P+HF Newtown, United Kingdom",52.5139432,-3.313771
-White Diamond Hand Car Wash,"273-277 Parramatta Rd, Haberfield NSW 2045, Australia ",http://www.diamondwash.com.au/,"44GH+3H Haberfield, New South Wales, Australia",-33.8747742,151.1288807
-Magic Hand Carwash - Newtown,"250 Latrobe Terrace, Newtown VIC 3220, Australia ",http://www.magichcw.com.au/,"V922+XV Newtown, Victoria, Australia",-38.1475671,144.3522278
-JC All Automotive,"71 Burrows Rd, Alexandria NSW 2015, Australia ",,"35PQ+R5 Alexandria, New South Wales, Australia",-33.9129492,151.1879797
-Car Wash,"Newtown SY16 3AG, United Kingdom ",,"GM7W+VV Newtown, United Kingdom",52.5146679,-3.3028543
+Name,Address,Website,Plus-code,lat,lon,service
+Gold Car Wash & Cafe,"44 O'Riordan St, Alexandria NSW 2015, Australia ",http://www.goldcarwashcafe.com.au/,"35QX+83 Alexandria, New South Wales, Australia",-33.9117478,151.1977002,Car wash
+Metro Self Serve Carwash,"20 Smidmore St, Marrickville NSW 2204, Australia ",http://www.marrickvillemetro.com.au/,"35RC+QV Marrickville, New South Wales, Australia",-33.908086,151.1721824,Car wash
+Flash Hand Car Wash,"400 Princes Hwy, St Peters NSW 2044, Australia ",,"35MC+2Q St Peters, New South Wales, Australia",-33.9174798,151.1719743,Car wash
+Car Wash Kingdom,"412-416 Liverpool Rd, Croydon NSW 2132, Australia ",,"4468+J6 Croydon, New South Wales, Australia",-33.8883772,151.1155666,Car wash
+Magic Hand Carwash - Newtown,"250 Latrobe Terrace, Newtown VIC 3220, Australia ",http://www.magichcw.com.au/,"V922+XV Newtown, Victoria, Australia",-38.1475671,144.3522278,Car wash
+Star Car Wash - Headquarter Office,"Unit 43/34 – 36 Ralph St, Alexandria NSW 2015, Australia ",https://www.starcarwash.com.au/,"35JW+GV Alexandria, New South Wales, Australia",-33.9186866,151.1972141,Car wash
+Star Car Wash - Alexandria Homemaker Centre,"Alexandria Homemaker Centre, Under Spotlight Sign, 49-59 O'Riordan St, Alexandria NSW 2015, Australia ",https://www.starcarwash.com.au/centres/alexandria/,"35PV+GM Alexandria, New South Wales, Australia",-33.9137229,151.1942367,Car wash
+Car is here,"95 Lennox St, Newtown NSW 2042, Australia ",,"453G+FM Newtown, New South Wales, Australia",-33.8962907,151.1767181,Car wash

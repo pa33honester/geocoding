@@ -1,13 +1,6 @@
-Name,Address,Website,Plus-code,lat,lon
-Wax Car Wash,"375 Cleveland St, Redfern NSW 2016, Australia ",https://www.waxcarwash.com.au/,"4656+CF Redfern, New South Wales, Australia",-33.8914701,151.2112472
-Fine Shine,"2/4 Defries Ave, Zetland NSW 2017, Australia ",http://www.fineshine.com.au/,,-33.905273,151.2129307
-Gem Premium Hand Car Wash Waterloo,"Meriton Retail Precinct, Parking Level 1, Crescent St, Waterloo NSW 2017, Australia ",https://gempremiumhandcarwash.com.au/,"4627+WM Waterloo, New South Wales, Australia",-33.89764,151.2141467
-Gold Car Wash & Cafe,"44 O'Riordan St, Alexandria NSW 2015, Australia ",http://www.goldcarwashcafe.com.au/,"35QX+83 Alexandria, New South Wales, Australia",-33.9117478,151.1977002
-RY carwash,"941 Bourke St, Waterloo NSW 2017, Australia ",,"36X5+89 Waterloo, New South Wales, Australia",-33.9016907,151.2084321
-GetNeat Mobile Car Wash,"95 Ross St, Forest Lodge NSW 2037, Australia ",https://getneat.com.au/,,-33.8790726,151.1797793
-Fine Shine Ceramic Coating,"Shop T66 2, 4 Defries Ave, Zetland NSW 2017, Australia ",https://ceramiccoating.sydney/,,-33.9052704,151.2130888
-Shynex Car Care - Waterless Wash Products,"78/788 Bourke St, Waterloo NSW 2017, Australia ",,"4627+P2 Waterloo, New South Wales, Australia",-33.8981415,151.2125209
-Star Car Wash - Headquarter Office,"Unit 43/34 – 36 Ralph St, Alexandria NSW 2015, Australia ",https://www.starcarwash.com.au/,,-33.9186866,151.1972141
-Star Car Wash - Alexandria Homemaker Centre,"Alexandria Homemaker Centre, Under Spotlight Sign, 49-59 O'Riordan St, Alexandria NSW 2015, Australia ",https://www.starcarwash.com.au/centres/alexandria/,"35PV+GM Alexandria, New South Wales, Australia",-33.9137229,151.1942367
-VCare Car Wash Dulwich Hill,"473 New Canterbury Rd, Dulwich Hill NSW 2203, Australia ",https://vcarecarwash.com.au/,,-33.9035764,151.1411908
-Rinsed,"15 Belvoir St, Surry Hills NSW 2010, Australia ",,"4664+FX Surry Hills, New South Wales, Australia",-33.888873,151.2073792
+Name,Address,Website,Plus-code,lat,lon,service
+Wax Car Wash,"375 Cleveland St, Redfern NSW 2016, Australia ",https://www.waxcarwash.com.au/,"4656+CF Redfern, New South Wales, Australia",-33.8914701,151.2112472,Car wash
+Fine Shine,"2/4 Defries Ave, Zetland NSW 2017, Australia ",http://www.fineshine.com.au/,"36V7+V5 Zetland, New South Wales, Australia",-33.905273,151.2129307,Car wash
+Gold Car Wash & Cafe,"44 O'Riordan St, Alexandria NSW 2015, Australia ",http://www.goldcarwashcafe.com.au/,"35QX+83 Alexandria, New South Wales, Australia",-33.9117478,151.1977002,Car wash
+Gem Premium Hand Car Wash Waterloo,"Meriton Retail Precinct, Parking Level 1, Crescent St, Waterloo NSW 2017, Australia ",https://gempremiumhandcarwash.com.au/,"4627+WM Waterloo, New South Wales, Australia",-33.89764,151.2141467,Car wash
+RY carwash,"941 Bourke St, Waterloo NSW 2017, Australia ",,"36X5+89 Waterloo, New South Wales, Australia",-33.9016907,151.2084321,Car wash
